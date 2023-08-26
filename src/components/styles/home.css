@@ -1,0 +1,162 @@
+.container {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+}
+
+.content-div {
+  width: 50%;
+  height: 99vh;
+  margin: auto;
+  padding: 50px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+  overflow-y: scroll;
+  background-color: #f1f1f1;
+}
+
+.content-div .post {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+  background-color: white;
+}
+
+.content-div .post > div:first-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+}
+
+.content-div .post > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0px 20px;
+}
+
+.content-div .post > div:nth-child(2) > img {
+  width: 100%;
+}
+
+.content-div .post > div:nth-child(2) > p {
+  width: 100%;
+  padding: 20px 0px;
+  text-align: left;
+}
+
+.content-div .post > div:last-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  padding-top: 0px;
+}
+
+.select-options {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 10px;
+}
+
+.select-Menus {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.select-options > div,
+.select-Menus > div {
+  width: 100%;
+}
+
+.select-options input,
+.select-Menus input {
+  display: none;
+}
+.select-options label,
+.select-Menus label {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid #1976d2;
+  color: #1976d2;
+  padding: 8px;
+  transition: 0.2s;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.select-Menus label {
+  width: 80%;
+  border-radius: 50px;
+}
+
+.select-options input:checked + label,
+.select-Menus input:checked + label {
+  color: #fff;
+  background-color: #1976d2;
+}
+
+.left-div {
+  width: 25%;
+  height: 99vh;
+}
+
+.left-div > h3,
+.right-div > h3 {
+  margin: 20px 0px;
+}
+
+.right-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-left: 20px;
+  width: 25%;
+  height: 99vh;
+}
+
+.user-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.sign-in-options Button {
+  width: 100%;
+}
+
+.sign-in-options Button:first-child {
+  margin-bottom: 10px;
+}
+
+@media all and (max-width: 650px) {
+}
+
+@media all and (max-width: 550px) {
+}
+
+@media all and (max-width: 450px) {
+}
